@@ -4,7 +4,7 @@ import java.util.Arrays;
 class duplicate {
     public void dupe(int a[])
     {
-       
+
         int temp,i,j,count=0;
         for( i=0;i<a.length;i++)
         {
@@ -18,28 +18,20 @@ class duplicate {
                 }
             }
         }
-       // for(int c:a)
-        //System.out.print(c);
+        System.out.print(a[0]+" ");
         for(int x=0;x<a.length-1;x++)
         {
-            for(int y=x+1;y<a.length;y++)
-            {
-                if(a[x]==a[y])
-                {
-                    count++;
-                }
+                if(a[x]!=a[x+1])
+             {
+            System.out.print(a[x+1]+" ");
         }
-        }
-        if(count==0)
-        {
-            System.out.print()
         }
     }
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         duplicate d=new duplicate();
         System.out.println("enter the array values");
-        int arr[]=new int[5];
+        int arr[]=new int[6];
         for(int i=0;i<arr.length;i++)
         {
             arr[i]=sc.nextInt();
